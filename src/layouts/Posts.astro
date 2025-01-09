@@ -15,7 +15,7 @@ const { className, posts, fluid } = Astro.props;
 >
   {
     posts.map((post: any, i: number) => (
-      <div class={i === 0 && fluid != false ? "col-12" : "col-12 sm:col-6"}>
+      <div class="col-12 sm:col-6">
         {post.data.image && (
           <a
             href={`/${post.slug}`}
@@ -79,7 +79,7 @@ const { className, posts, fluid } = Astro.props;
             </>
           </li>
         </ul>
-        <h3 class="mb-4">
+        <h3 class="mb-4" style="font-size: 1.5rem!important;">
           <a
             href={`/${post.slug}`}
             class="block hover:text-primary transition duration-300"

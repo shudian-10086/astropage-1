@@ -5,39 +5,12 @@
       "url": "/"
     },
     {
-      "name": "About",
+      "name": "FiddleBops",
       "url": "/about"
     },
     {
-      "name": "Contact",
+      "name": "FiddleBops Story",
       "url": "/contact"
-    },
-    {
-      "name": "Pages",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Authors",
-          "url": "/authors"
-        },
-        {
-          "name": "Categories",
-          "url": "/categories"
-        },
-        {
-          "name": "Tags",
-          "url": "/tags"
-        },
-        {
-          "name": "Elements",
-          "url": "/elements"
-        },
-        {
-          "name": "Privacy Policy",
-          "url": "/privacy-policy"
-        }
-      ]
     }
   ],
   "footer": [
@@ -46,15 +19,23 @@
       "url": "/about"
     },
     {
-      "name": "Contact",
+      "name": "FiddleBops",
       "url": "/contact"
     },
     {
-      "name": "Elements",
+      "name": "FiddleBops Story",
       "url": "/elements"
     },
     {
-      "name": "Privacy Policy",
+      "name": "Features",
+      "url": "/privacy-policy"
+    },
+    {
+      "name": "使用说明",
+      "url": "/privacy-policy"
+    },
+    {
+      "name": "常见问题",
       "url": "/privacy-policy"
     }
   ]

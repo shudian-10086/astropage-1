@@ -11,12 +11,154 @@ const sortedPosts = sortByDate(posts);
 const totalPages = Math.ceil(posts.length / config.settings.pagination);
 const currentPosts = sortedPosts.slice(0, config.settings.pagination);
 ---
+<style>
+  h1, h2 {
+    text-align: center;font-family: bpreplay, bpreplay_fallback, sans-serif;color: #bd9644;
+  }
+  h2 { margin: 30px 0; }
+  .mb20 { margin: 0 0 20px 0; }
+  h3, h3.mb-4 { font-size: 1.5rem !important; }
+  p {
+    text-align: center;
+    line-height: 1.5;
+  }
+  .tl { text-align: left !important; }
+  .game-box {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .background-box,
+  .background-box-2 {
+    padding: 60px 0;
+    width: 100%;
+    margin: 60px 0;
+  }
+  .background-box { background-color: #100738; }
+  .background-box-2 { background-color: #100738; }
+  .background-box h2,
+  .background-box h3,
+  .background-box p,
+  .background-box-2 h1, .background-box-2 h2,
+  .background-box-2 h3,
+  .background-box-2 p {
+    color: #fff !important;
+  }
+  .section{
+    padding: 0!important;
+  }
+</style>
 
 <Base>
   <section class="section">
+    <div class="background-box-2">
     <div class="container">
-      <Posts posts={currentPosts} className="mb-16" />
-      <Pagination currentPage={1} totalPages={totalPages} />
-    </div>
+      <h1>Free <i>FiddleBops</i> Game</h1>
+      <p class="mb20">Here you can play FiddleBops. FiddleBops is one of our favorite music creation games.</p>
+      <div class="game-box">
+        <iframe 
+          src="https://silkycell.github.io/FiddleBops/" 
+          width="100%" 
+          height="500px" 
+          loading="lazy" 
+          fetchpriority="high">
+        </iframe>
+      </div></div></div>
+      <div class="container">
+        <h2>FiddleBops游戏玩法</h2>
+        <p class="mb20">This is a simple blog built with Astro.</p>
+        <div class="row gy-5 gx-4">
+        
+          <div class="col-12">
+        
+            <h3 class="mb-4">游戏模式选择
+            </h3>
+            <p class="text-text tl">
+              <strong>自由创作模式:</strong>玩家可以随意选择角色和音效,自由组合创作音乐,探索不同的声音搭配和创作可能性.<br>
+              <strong>挑战模式:</strong>在挑战模式中,玩家需要按照节奏提示进行操作,完成特定的节奏挑战,以解锁新的角色,音效和功能.
+            </p>
+          </div>
+          <div class="col-12">
+        
+            <h3 class="mb-4">角色与音效选择
+            </h3>
+            <p class="text-text tl">
+            <strong>选择角色:</strong>游戏中有多种独特的Fiddlebops角色可供选择,每个角色都代表不同的音乐元素,如节拍、旋律和音效等.<br>
+            <strong>分配音效:</strong>使用鼠标拖动音效符号,将其放置到选定的角色上,为角色分配特定的声音.
+            </p>
+          </div>
+          <div class="col-12">
+        
+            <h3 class="mb-4">游戏互动与挑战
+            </h3>
+            <p class="text-text tl">
+            <strong>节奏匹配:</strong>在挑战模式中,玩家需要与不断变化的节奏同步,通过点击、滑动和长按等操作来匹配节奏.<br>
+            <strong>达成目标:</strong>在挑战模式下,完成特定的节奏或分数要求,以解锁新的关卡、角色或音效.
+            </p>
+          </div>
+          <div class="col-12">
+        
+            <h3 class="mb-4">音乐创作过程
+            </h3>
+            <p class="text-text tl">
+              <strong>拖放组合:</strong>通过拖放界面,将角色放置到舞台上,组合不同的声音层来创作音乐.玩家可以尝试各种角色组合,发现独特的音效和动画效果.<br>
+              <strong>调整音高与层次:</strong>在创作过程中,可以调整音高,增加音效的层次感，使音乐更加丰富.<br>
+              <strong>实验与探索:</strong>鼓励玩家大胆尝试不同的角色组合和音效搭配,探索出个性化的音乐风格.
+            </p>
+          </div>
+        </div></div>
+    <div class="background-box">
+    <div class="container">
+<h2>FiddleBops Features</h2>
+<p class="mb20">This is a simple blog built with Astro.</p>
+<div class="row gy-5 gx-4">
+
+  <div class="col-12 sm:col-6">
+
+    <h3 class="mb-4">Fiddlebops介绍
+    </h3>
+    <p class="text-text tl">
+      Fiddlebops是一个由粉丝制作的项目，灵感来源于流行的游戏Incredibox。由热情的玩家创建，它为Incredibox宇宙带来了新的视角，拥有原创的角色、富有想象力的故事以及互动式的音乐创作体验。虽然不属于官方的Incredibox故事，但Fiddlebops增添了一种富有创意的转折，吸引了长期粉丝和新粉丝。
+    </p>
+  </div>
+  <div class="col-12 sm:col-6">
+
+    <h3 class="mb-4">独特的角色和新颖的叙事
+    </h3>
+    <p class="text-text tl">
+      与官方的Incredibox阵容不同，Fiddlebops引入了一组原创角色，为游戏带来了新的活力。每个角色都经过精心设计，具有独特的个性、视觉效果和声音，反映了Incredibox的风格，同时提供了独特的身份。这个粉丝制作的扩展通过增加新颖的叙事和角色互动，丰富了Incredibox宇宙，使玩家能够以全新的视角体验这个世界。
+    </p>
+  </div>
+  <div class="col-12 sm:col-6">
+
+    <h3 class="mb-4">引人入胜的游戏体验
+    </h3>
+    <p class="text-text tl">
+      Fiddlebops保留了Incredibox粉丝喜爱的核心音乐创作机制。玩家可以尝试各种节奏、声音和旋律来创作自己独特的音乐作品。然而，Fiddlebops还引入了新的游戏层次，包括富有创意的挑战和角色互动，使玩家沉浸在粉丝创造的世界中。通过以创新的方式组合角色，玩家可以解锁新的音乐机会，更深入地体验以故事为驱动的体验。
+    </p>
+  </div>
+  <div class="col-12 sm:col-6">
+
+    <h3 class="mb-4">粉丝创造力的庆典
+    </h3>
+    <p class="text-text tl">
+      Fiddlebops的一个突出特点是其与Incredibox粉丝社区的紧密联系。游戏展示了粉丝对Incredibox宇宙的重新想象所表现出的热情、才华和创造力，同时保持了其原始精神。Fiddlebops提供了一个令人兴奋的非正统之旅，粉丝可以参与其中，体验一个庆祝创意表达的重新诠释的世界。
+    </p>
+  </div>
+</div></div>
+</div>
+
+
+<div class="container">
+  <h2>FiddleBops相关文章</h2>
+  <p class="mb20">This is a simple blog built with Astro.</p>
+  <Posts posts={currentPosts} className="mb-16" />
+</div>
+<div class="background-box-2" style="margin-bottom:0px;">
+  <div class="container">
+<h2>FiddleBops合作伙伴</h2>
+<p class="mb20">This is a simple blog built with Astro.</p>
+</div>
+  </div>
+
   </section>
 </Base>

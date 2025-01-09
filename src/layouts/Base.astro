@@ -60,7 +60,46 @@ const { title, meta_title, description, image, noindex, canonical } =
     />
     <meta name="generator" content={Astro.generator} />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
+    <style>
+     <style>
+    @font-face {
+      font-family: 'BPreplay';
+      src: url('/public/fonts/BPreplay.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    
+    @font-face {
+      font-family: 'BPreplay';
+      src: url('/public/fonts/BPreplayBold.otf') format('opentype');
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
+    }
+    
+    @font-face {
+      font-family: 'BPreplay';
+      src: url('/public/fonts/BPreplayItalics.otf') format('opentype');
+      font-weight: normal;
+      font-style: italic;
+      font-display: swap;
+    }
+    
+    @font-face {
+      font-family: 'BPreplay';
+      src: url('/public/fonts/BPreplayBoldItalics.otf') format('opentype');
+      font-weight: bold;
+      font-style: italic;
+      font-display: swap;
+    }
+    body {
+  font-family: 'BPreplay', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+}
+a:hover {
+  color: #bd9644 !important;
+}
+    </style>
     <!-- google font css -->
     <AstroFont
       config={[
@@ -168,6 +207,9 @@ const { title, meta_title, description, image, noindex, canonical } =
       }`}
     />
     <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preload" href="https://silkycell.github.io/FiddleBops/" as="document">
+    <link rel="dns-prefetch" href="https://silkycell.github.io">
+    <link rel="preconnect" href="https://silkycell.github.io" crossorigin>
   </head>
   <body>
     <TwSizeIndicator />
