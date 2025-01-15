@@ -34,10 +34,10 @@ const { title, description, meta_title, image, what_i_do } = entry.data;
           }
         </div>
         <div class="sm:col-7 md:col-8">
-          <h1 set:html={markdownify(title)} class="h3 mb-8" />
+          <h1 set:html=title class="h3 mb-8" />
 
           <div class="content">
-            <Content />
+            Fiddlebops是一个由粉丝制作的项目，灵感来源于流行的游戏Incredibox。由热情的玩家创建，它为Incredibox宇宙带来了新的视角，拥有原创的角色、富有想象力的故事以及互动式的音乐创作体验。虽然不属于官方的Incredibox故事，但Fiddlebops增添了一种富有创意的转折，吸引了长期粉丝和新粉丝。
           </div>
           <a href="/contact" class="btn btn-primary text-white py-2"
             >Get In Touch</a
@@ -49,17 +49,25 @@ const { title, description, meta_title, image, what_i_do } = entry.data;
 
   <section class="section pt-0">
     <div class="container">
-      <h3 class="page-heading mb-20">{what_i_do.title}</h3>
+      <h3 class="page-heading mb-20">FiddleBops Gameplay</h3>
       <div class="row justify-center gy-4 text-center">
-        {
-          what_i_do.items.map((item: any) => (
+
+
             <div class="lg:col-4 md:col-6">
               <i class="{{.icon}} fa-3x text-primary mb-4" />
-              <h4 class="text-dark font-weight-700 mb-3">{item.title}</h4>
-              <p>{item.description}</p>
+              <h4 class="text-dark font-weight-700 mb-3">title</h4>
+              <p>Fiddlebops是一个由粉丝制作的项目，灵感来源于流行的游戏Incredibox。由热情的玩家创建，它为Incredibox宇宙带来了新的视角，拥有原创的角色、富有想象力的故事以及互动式的音乐创作体验。虽然不属于官方的Incredibox故事，但Fiddlebops增添了一种富有创意的转折，吸引了长期粉丝和新粉丝。</p>
             </div>
-          ))
-        }
+            <div class="lg:col-4 md:col-6">
+              <i class="{{.icon}} fa-3x text-primary mb-4" />
+              <h4 class="text-dark font-weight-700 mb-3">title</h4>
+              <p>Fiddlebops是一个由粉丝制作的项目，灵感来源于流行的游戏Incredibox。由热情的玩家创建，它为Incredibox宇宙带来了新的视角，拥有原创的角色、富有想象力的故事以及互动式的音乐创作体验。虽然不属于官方的Incredibox故事，但Fiddlebops增添了一种富有创意的转折，吸引了长期粉丝和新粉丝。</p>
+            </div>
+            <div class="lg:col-4 md:col-6">
+              <i class="{{.icon}} fa-3x text-primary mb-4" />
+              <h4 class="text-dark font-weight-700 mb-3">title</h4>
+              <p>Fiddlebops是一个由粉丝制作的项目，灵感来源于流行的游戏Incredibox。由热情的玩家创建，它为Incredibox宇宙带来了新的视角，拥有原创的角色、富有想象力的故事以及互动式的音乐创作体验。虽然不属于官方的Incredibox故事，但Fiddlebops增添了一种富有创意的转折，吸引了长期粉丝和新粉丝。</p>
+            </div>
       </div>
     </div>
   </section>
